@@ -11,7 +11,7 @@ describe PagesController do
     it "should have the right title" do
       get :home
       response.should have_selector('title', 
-                        :content => "Elizabeth Trevan - Celebrant" )
+                        :content => "Elizabeth Trevan | Celebrant" )
     end
     it "should not have a blank body" do
       get :home
@@ -28,7 +28,7 @@ describe PagesController do
   it "should have the right title" do
     get :weddings
     response.should have_selector('title', 
-                      :content => "Elizabeth Trevan - Weddings" )
+                      :content => "Elizabeth Trevan | Weddings" )
   end
 
   describe "GET 'namings'" do
@@ -41,7 +41,7 @@ describe PagesController do
   it "should have the right title" do
     get :namings
     response.should have_selector('title', 
-                      :content => "Elizabeth Trevan - Namings" )
+                      :content => "Elizabeth Trevan | Namings" )
   end
   
 
@@ -55,7 +55,7 @@ describe PagesController do
   it "should have the right title" do
     get :funerals
     response.should have_selector('title', 
-                      :content => "Elizabeth Trevan - Celebration of Life" )
+                      :content => "Elizabeth Trevan | Celebration of Life" )
   end
   
 
@@ -69,7 +69,7 @@ describe PagesController do
   it "should have the right title" do
     get :other
     response.should have_selector('title', 
-                      :content => "Elizabeth Trevan - Other Celebrations" )
+                      :content => "Elizabeth Trevan | Other Celebrations" )
   end
   
 
@@ -83,7 +83,7 @@ describe PagesController do
   it "should have the right title" do
     get :contact
     response.should have_selector('title', 
-                      :content => "Elizabeth Trevan - Contact" )
+                      :content => "Elizabeth Trevan | Contact" )
   end
   
 
