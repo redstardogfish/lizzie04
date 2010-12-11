@@ -6,6 +6,7 @@ Lizzie04::Application.routes.draw do
   get "pages/funerals"
   get "pages/other"
   get "pages/contact"
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
