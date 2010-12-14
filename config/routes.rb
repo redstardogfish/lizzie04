@@ -1,11 +1,13 @@
 Lizzie04::Application.routes.draw do
 
-  get "pages/home"
-  get "pages/weddings"
-  get "pages/namings"
-  get "pages/funerals"
-  get "pages/other"
-  get "pages/contact"
+
+  root :to => "pages#home"
+  match '/weddings', :to => "pages#weddings" 
+  match '/namings', :to => "pages#namings" 
+  match '/funerals', :to => "pages#funerals" 
+  match '/other', :to => "pages#other" 
+  match '/contact', :to => "pages#contact" 
+  
   
 
   # The priority is based upon order of creation:
